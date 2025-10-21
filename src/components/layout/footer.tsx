@@ -131,9 +131,9 @@ export default function Footer() {
             </p>
             <p>Designed & Developed by <a href='https://www.fescode.com' className='text-emerald-400' target='blank'>FesCode Limited</a></p>
             <div className="flex space-x-8 mt-6 md:mt-0">
-              <Link to="/legal" className="hover:text-emerald-400 transition-colors duration-300 font-medium hover:translate-y-[-2px] inline-block">Privacy Policy</Link>
-              <Link to="/legal" className="hover:text-emerald-400 transition-colors duration-300 font-medium hover:translate-y-[-2px] inline-block">Terms of Service</Link>
-              <Link to="/legal" className="hover:text-emerald-400 transition-colors duration-300 font-medium hover:translate-y-[-2px] inline-block">Cookie Policy</Link>
+              <Link to="/privacy-policy" className="hover:text-emerald-400 transition-colors duration-300 font-medium hover:translate-y-[-2px] inline-block">Privacy Policy</Link>
+              <Link to="/terms-of-service" className="hover:text-emerald-400 transition-colors duration-300 font-medium hover:translate-y-[-2px] inline-block">Terms of Service</Link>
+              <Link to="/cookie-policy" className="hover:text-emerald-400 transition-colors duration-300 font-medium hover:translate-y-[-2px] inline-block">Cookie Policy</Link>
             </div>
           </div>
         </div>
