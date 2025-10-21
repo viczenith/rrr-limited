@@ -20,6 +20,7 @@ import { useNavigate } from 'react-router-dom'
 // For PDF generation
 import html2canvas from 'html2canvas'
 import jsPDF from 'jspdf'
+import { createRoot } from 'react-dom/client'
 
 export default function InvoiceGeneratorPage() {
   const [invoiceData, setInvoiceData] = useState<InvoiceData>(defaultInvoiceData)
@@ -102,10 +103,10 @@ export default function InvoiceGeneratorPage() {
       tempDiv.style.position = 'absolute'
       tempDiv.style.left = '-9999px'
       tempDiv.style.top = '0'
+      tempDiv.style.width = '210mm'
       document.body.appendChild(tempDiv)
 
       // Render the invoice template into the temporary container
-      const { createRoot } = await import('react-dom/client')
       const root = createRoot(tempDiv)
       
       await new Promise<void>((resolve) => {
