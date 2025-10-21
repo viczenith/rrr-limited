@@ -10,7 +10,7 @@ interface InvoiceTemplateProps {
 
 const InvoiceContainer = styled.div`
   max-width: 210mm;
-  width: 100%;
+  width: 210mm;
   margin: 0 auto;
   padding: 15mm;
   background: white;
@@ -21,16 +21,6 @@ const InvoiceContainer = styled.div`
   min-height: 297mm;
   position: relative;
   box-sizing: border-box;
-
-  /* Responsive adjustments for smaller screens */
-  @media (max-width: 900px) {
-    padding: 10mm;
-  }
-
-  @media (max-width: 600px) {
-    padding: 8mm;
-    font-size: 0.9em;
-  }
 
   /* Watermark */
   &::before {
@@ -65,11 +55,6 @@ const Header = styled.div`
   padding-bottom: 0;
   flex-wrap: wrap;
   gap: 10px;
-
-  @media (max-width: 600px) {
-    flex-direction: column;
-    align-items: stretch;
-  }
 `;
 
 const CompanyInfo = styled.div`
@@ -94,11 +79,6 @@ const VoiceLabel = styled.div`
 const LogoSection = styled.div`
   flex: 0 0 110px;
   text-align: left;
-
-  @media (max-width: 600px) {
-    flex: 0 0 auto;
-    text-align: center;
-  }
 `;
 
 const Logo = styled.img`
@@ -113,17 +93,12 @@ const InvoiceTitle = styled.div`
 `;
 
 const InvoiceTitleText = styled.h2`
-  font-size: 40px; /* inline override applied in JSX too; keep here for fallback */
+  font-size: 40px;
   font-weight: 700;
-  color: #7c6f79; /* subtle purple tone */
+  color: #7c6f79;
   margin: 0;
   text-transform: uppercase;
   letter-spacing: 2px;
-
-  @media (max-width: 600px) {
-    font-size: 28px;
-    letter-spacing: 1px;
-  }
 `;
 
 const InvoiceMetaRow = styled.div`
@@ -149,11 +124,6 @@ const ClientSection = styled.div`
   justify-content: space-between;
   margin-bottom: 22px;
   gap: 20px;
-
-  @media (max-width: 600px) {
-    flex-direction: column;
-    gap: 15px;
-  }
 `;
 
 const ClientColumn = styled.div`
@@ -185,10 +155,6 @@ const ItemsTable = styled.table`
   font-size: 11px;
   border: 1px solid #000;
   table-layout: fixed;
-
-  @media (max-width: 600px) {
-    font-size: 9px;
-  }
 
   /* Ensure table cells don't overflow */
   td, th {
@@ -225,11 +191,6 @@ const SignatureSection = styled.div`
   justify-content: space-between;
   margin-top: 30px;
   gap: 50px;
-
-  @media (max-width: 600px) {
-    flex-direction: column;
-    gap: 20px;
-  }
 `;
 
 const SignatureBox = styled.div`
