@@ -20,7 +20,7 @@ function App() {
   
   // Routes that should NOT have navbar and footer
   const hideNavigationRoutes = ['/invoice-generator']
-  const shouldHideNavigation = hideNavigationRoutes.includes(location.pathname)
+  const shouldHideNavigation = hideNavigationRoutes.some(route => location.pathname.endsWith(route))
 
   return (
     <div className="min-h-screen">
