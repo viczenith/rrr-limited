@@ -28,7 +28,7 @@ const estates: Estate[] = [
     plots: 150,
     estateSizeHa: 25,
     amenities: ['24/7 Security', 'Tarred Roads', 'Electricity', 'Water Supply', 'Drainage'],
-    image: '/estate-prototypes/prototype3.webp',
+    image: `${import.meta.env.BASE_URL}estate-prototypes/prototype3.webp`,
     status: 'Available',
     description:
       'A thoughtfully planned community with modern infrastructure and swift access to key routes across Abuja.'
@@ -41,7 +41,7 @@ const estates: Estate[] = [
     plots: 150,
     estateSizeHa: 25,
     amenities: ['24/7 Security', 'Tarred Roads', 'Electricity', 'Water Supply', 'Drainage'],
-    image: '/estate-prototypes/prototype3.webp',
+    image: `${import.meta.env.BASE_URL}estate-prototypes/prototype3.webp`,
     status: 'Sold Out',
     description:
       'A thoughtfully planned community with modern infrastructure and swift access to key routes across Abuja.'
@@ -54,7 +54,7 @@ const estates: Estate[] = [
     plots: 150,
     estateSizeHa: 25,
     amenities: ['24/7 Security', 'Tarred Roads', 'Electricity', 'Water Supply', 'Drainage'],
-    image: '/estate-prototypes/prototype3.webp',
+    image: `${import.meta.env.BASE_URL}estate-prototypes/prototype3.webp`,
     status: 'Available',
     description:
       'A thoughtfully planned community with modern infrastructure and swift access to key routes across Abuja.'
@@ -67,7 +67,7 @@ const estates: Estate[] = [
     plots: 150,
     estateSizeHa: 25,
     amenities: ['24/7 Security', 'Tarred Roads', 'Electricity', 'Water Supply', 'Drainage'],
-    image: '/estate-prototypes/prototype3.webp',
+    image: `${import.meta.env.BASE_URL}estate-prototypes/prototype3.webp`,
     status: 'Sold Out',
     description:
       'A thoughtfully planned community with modern infrastructure and swift access to key routes across Abuja.'
@@ -80,7 +80,7 @@ const estates: Estate[] = [
     plots: 200,
     estateSizeHa: 30,
     amenities: ['Gated Community', 'Recreation Center', 'Schools Nearby', 'Shopping Mall', 'Hospital'],
-    image: '/estate-prototypes/prototype1.webp',
+    image: `${import.meta.env.BASE_URL}estate-prototypes/prototype1.webp`,
     status: 'Selling Fast',
     description:
       'Family-friendly living in a flourishing corridor with essential amenities and quality infrastructure.'

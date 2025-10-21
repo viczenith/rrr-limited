@@ -95,11 +95,11 @@ export const estateConfigs: Record<EstateKey, EstateConfig> = {
 export const plotConfigs: Record<string, PlotConfig> = {
   '400sqm': {
     size: '400sqm',
-    prototypeImage: '/estate-prototypes/prototype1.webp',
+    prototypeImage: `${import.meta.env.BASE_URL}estate-prototypes/prototype1.webp`,
     rating: 4.6,
     description:
       '3 Bedroom Fully Detached Duplex. Affordable luxury living with complete infrastructure and serene environment.',
-    floorPlanImage: '/estate-prototypes/floor-400.webp',
+    floorPlanImage: `${import.meta.env.BASE_URL}estate-prototypes/floor-400.webp`,
     floorPlans: [
       {
         title: 'Ground Floor',
@@ -107,7 +107,7 @@ export const plotConfigs: Record<string, PlotConfig> = {
         bathrooms: 2,
         bq: 1,
         lounges: 1,
-        image: '/floor-plan/ground-floor.webp',
+        image: `${import.meta.env.BASE_URL}floor-plan/ground-floor.webp`,
         notes: 'Spacious living, dining, kitchen, guest room, and BQ.'
       },
       {
@@ -116,18 +116,18 @@ export const plotConfigs: Record<string, PlotConfig> = {
         bathrooms: 2,
         lounges: 1,
         study: true,
-        image: '/floor-plan/first-floor.webp',
+        image: `${import.meta.env.BASE_URL}floor-plan/first-floor.webp`,
         notes: 'Primary bedroom ensuite with balcony and family lounge.'
       }
     ],
   },
   '500sqm': {
     size: '500sqm',
-    prototypeImage: '/estate-prototypes/prototype2.webp',
+    prototypeImage: `${import.meta.env.BASE_URL}estate-prototypes/prototype2.webp`,
     rating: 4.8,
     description:
       '3 Bedroom Fully Detached Duplex. Premium residential plot with modern infrastructure and strategic location.',
-    floorPlanImage: '/estate-prototypes/prototype2.webp',
+    floorPlanImage: `${import.meta.env.BASE_URL}estate-prototypes/prototype2.webp`,
     floorPlans: [
       {
         title: 'Ground Floor',
@@ -135,7 +135,7 @@ export const plotConfigs: Record<string, PlotConfig> = {
         bathrooms: 2,
         bq: 1,
         lounges: 1,
-        image: '/floor-plan/ground-floor.webp',
+        image: `${import.meta.env.BASE_URL}floor-plan/ground-floor.webp`,
       },
       {
         title: 'First Floor',
@@ -143,65 +143,65 @@ export const plotConfigs: Record<string, PlotConfig> = {
         bathrooms: 3,
         lounges: 1,
         study: true,
-        image: '/floor-plan/first-floor.webp',
+        image: `${import.meta.env.BASE_URL}floor-plan/first-floor.webp`,
       },
       {
         title: 'Second Floor',
         bedrooms: 1,
         bathrooms: 1,
         lounges: 1,
-        image: '/floor-plan/secound-floor.webp',
+        image: `${import.meta.env.BASE_URL}floor-plan/secound-floor.webp`,
         notes: 'Pent floor lounge and terrace.'
       }
     ],
   },
   '550sqm': {
     size: '550sqm',
-    prototypeImage: '/estate-prototypes/prototype3.webp',
+    prototypeImage: `${import.meta.env.BASE_URL}estate-prototypes/prototype3.webp`,
     rating: 4.5,
     description:
       '3 Bedroom Fully Detached Duplex. Sustainable living plot with eco-friendly features and wellness focus.',
-    floorPlanImage: '/estate-prototypes/floor-550.webp',
+    floorPlanImage: `${import.meta.env.BASE_URL}estate-prototypes/floor-550.webp`,
     floorPlans: [
-  { title: 'Ground Floor', bedrooms: 1, bathrooms: 2, bq: 1, lounges: 1, image: '/floor-plan/ground-floor.webp' },
-      { title: 'First Floor', bedrooms: 3, bathrooms: 3, lounges: 1, study: true, image: '/floor-plan/first-floor.webp' },
+  { title: 'Ground Floor', bedrooms: 1, bathrooms: 2, bq: 1, lounges: 1, image: `${import.meta.env.BASE_URL}floor-plan/ground-floor.webp` },
+      { title: 'First Floor', bedrooms: 3, bathrooms: 3, lounges: 1, study: true, image: `${import.meta.env.BASE_URL}floor-plan/first-floor.webp` },
     ],
   },
   '600sqm': {
     size: '600sqm',
-    prototypeImage: '/estate-prototypes/prototype1.webp',
+    prototypeImage: `${import.meta.env.BASE_URL}estate-prototypes/prototype1.webp`,
     rating: 4.9,
     description:
       '3 Bedroom Fully Detached Duplex. Eco-friendly plot with sustainable living features and modern amenities.',
-    floorPlanImage: '/estate-prototypes/floor-600.webp',
+    floorPlanImage: `${import.meta.env.BASE_URL}estate-prototypes/floor-600.webp`,
     floorPlans: [
-  { title: 'Ground Floor', bedrooms: 2, bathrooms: 2, bq: 1, lounges: 1, image: '/floor-plan/ground-floor.webp' },
-      { title: 'First Floor', bedrooms: 3, bathrooms: 3, lounges: 1, image: '/floor-plan/first-floor.webp' },
+  { title: 'Ground Floor', bedrooms: 2, bathrooms: 2, bq: 1, lounges: 1, image: `${import.meta.env.BASE_URL}floor-plan/ground-floor.webp` },
+      { title: 'First Floor', bedrooms: 3, bathrooms: 3, lounges: 1, image: `${import.meta.env.BASE_URL}floor-plan/first-floor.webp` },
     ],
   },
   '650sqm': {
     size: '650sqm',
-    prototypeImage: '/estate-prototypes/prototype2.webp',
+    prototypeImage: `${import.meta.env.BASE_URL}estate-prototypes/prototype2.webp`,
     rating: 4.8,
     description:
       '3 Bedroom Fully Detached Duplex. Exclusive plot with premium recreational facilities and scenic potential.',
-    floorPlanImage: '/estate-prototypes/floor-650.webp',
+    floorPlanImage: `${import.meta.env.BASE_URL}estate-prototypes/floor-650.webp`,
     floorPlans: [
-  { title: 'Ground Floor', bedrooms: 2, bathrooms: 3, bq: 1, lounges: 2, image: '/floor-plan/ground-floor.webp' },
-      { title: 'First Floor', bedrooms: 4, bathrooms: 3, lounges: 1, study: true, image: '/floor-plan/first-floor.webp' },
+  { title: 'Ground Floor', bedrooms: 2, bathrooms: 3, bq: 1, lounges: 2, image: `${import.meta.env.BASE_URL}floor-plan/ground-floor.webp` },
+      { title: 'First Floor', bedrooms: 4, bathrooms: 3, lounges: 1, study: true, image: `${import.meta.env.BASE_URL}floor-plan/first-floor.webp` },
     ],
   },
   '750sqm': {
     size: '750sqm',
-    prototypeImage: '/estate-prototypes/prototype3.webp',
+    prototypeImage: `${import.meta.env.BASE_URL}estate-prototypes/prototype3.webp`,
     rating: 4.7,
     description:
       '3 Bedroom Fully Detached Duplex. Luxury plot with world-class amenity potential and smart technology integration.',
-    floorPlanImage: '/estate-prototypes/floor-750.webp',
+    floorPlanImage: `${import.meta.env.BASE_URL}estate-prototypes/floor-750.webp`,
     floorPlans: [
-  { title: 'Ground Floor', bedrooms: 2, bathrooms: 3, bq: 1, lounges: 2, image: '/floor-plan/ground-floor.webp' },
-      { title: 'First Floor', bedrooms: 4, bathrooms: 4, lounges: 1, study: true, image: '/floor-plan/first-floor.webp' },
-      { title: 'Second Floor', bedrooms: 1, bathrooms: 1, lounges: 1, image: '/floor-plan/secound-floor.webp' },
+  { title: 'Ground Floor', bedrooms: 2, bathrooms: 3, bq: 1, lounges: 2, image: `${import.meta.env.BASE_URL}floor-plan/ground-floor.webp` },
+      { title: 'First Floor', bedrooms: 4, bathrooms: 4, lounges: 1, study: true, image: `${import.meta.env.BASE_URL}floor-plan/first-floor.webp` },
+      { title: 'Second Floor', bedrooms: 1, bathrooms: 1, lounges: 1, image: `${import.meta.env.BASE_URL}floor-plan/secound-floor.webp` },
     ],
   },
 }

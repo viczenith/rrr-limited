@@ -154,11 +154,11 @@ const Navbar = () => {
                   />
                   
                   <motion.img 
-                    src="/rrr-logo.png" 
+                    src={`${import.meta.env.BASE_URL}rrr-logo.png`} 
                     alt="Righteous & Rich Realty Logo"
                     className="logo-image"
                     onError={(e) => {
-                      e.currentTarget.src = "/logo.png";
+                      e.currentTarget.src = `${import.meta.env.BASE_URL}logo.png`;
                     }}
                     whileHover={{ rotateY: 10 }}
                     transition={{ duration: 0.3 }}

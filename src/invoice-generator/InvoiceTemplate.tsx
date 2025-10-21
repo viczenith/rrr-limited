@@ -41,7 +41,7 @@ const InvoiceContainer = styled.div`
     transform: translate(-50%, -50%);
     width: 700px;
     height: 700px;
-    background-image: url('/rrr-logo.png');
+    background-image: url(${import.meta.env.BASE_URL} + 'rrr-logo.png');
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center;
@@ -365,7 +365,7 @@ export const InvoiceTemplate: React.FC<InvoiceTemplateProps> = ({
                     }}
                 >
 
-                    <Logo src="/rrr-logo.png" alt="RRR Logo" crossOrigin="anonymous" style={{ width: 300, height: "auto", objectFit: "contain", marginBottom: 4 }} />
+                    <Logo src={`${import.meta.env.BASE_URL}rrr-logo.png`} alt="RRR Logo" crossOrigin="anonymous" style={{ width: 300, height: "auto", objectFit: "contain", marginBottom: 4 }} />
                     <VoiceLabel
                         style={{
                             marginTop: 10,
@@ -970,7 +970,7 @@ export const InvoiceTemplate: React.FC<InvoiceTemplateProps> = ({
                         Authorized Signature:
                     </SignatureLabel>
                     <SignatureImage 
-                        src="/signature/rrr-authorised-signature1.png" 
+                        src={`${import.meta.env.BASE_URL}signature/rrr-authorised-signature1.png`} 
                         alt="Authorized Signature" 
                         crossOrigin="anonymous"
                         style={{

@@ -192,7 +192,7 @@ export default function AboutUs() {
                         <div className="relative w-full h-full rounded-full overflow-hidden shadow-2xl border-2 sm:border-4 border-amber-400">
                           {!imageError ? (
                             <img 
-                              src="/rrr-ceo.jpeg" 
+                              src={`${import.meta.env.BASE_URL}rrr-ceo.jpeg`} 
                               // src="/rrr-ceo-nobg.png"
                               alt="CEO - Righteous & Rich Realty" 
                               className="w-full h-full object-cover object-center group-hover:scale-110 transition-transform duration-700"

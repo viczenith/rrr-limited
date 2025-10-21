@@ -197,7 +197,7 @@ const DateCell = styled(TableCell)`
   }
 `;
 
-const StatusBadge = styled.span<{ status: 'paid' | 'pending' | 'overdue' }>`
+const StatusBadge = styled.span<{ status: 'paid' | 'pending' }>`
   padding: 6px 12px;
   border-radius: 12px;
   font-size: 12px;
@@ -210,8 +210,6 @@ const StatusBadge = styled.span<{ status: 'paid' | 'pending' | 'overdue' }>`
       case 'paid':
         return 'background: #d4edda; color: #155724;';
       case 'pending':
-        return 'background: #fff3cd; color: #856404;';
-      case 'overdue':
         return 'background: #f8d7da; color: #721c24;';
       default:
         return 'background: #e0e0e0; color: #333;';
@@ -393,7 +391,7 @@ export const InvoiceHistoryList: React.FC<InvoiceHistoryListProps> = ({
   onDownload
 }) => {
   const [searchTerm, setSearchTerm] = useState('');
-  const [filterStatus, setFilterStatus] = useState<'all' | 'paid' | 'pending' | 'overdue'>('all');
+  const [filterStatus, setFilterStatus] = useState<'all' | 'paid' | 'pending' >('all');
 
   const formatCurrency = (amount: number) =>
     new Intl.NumberFormat('en-NG', {
@@ -410,19 +408,12 @@ export const InvoiceHistoryList: React.FC<InvoiceHistoryListProps> = ({
     });
   };
 
-  const getInvoiceStatus = (invoice: InvoiceData): 'paid' | 'pending' | 'overdue' => {
+  const getInvoiceStatus = (invoice: InvoiceData): 'paid' | 'pending' => {
     // Check if payment/credit amount equals or exceeds total
     if (invoice.paymentCreditAmount >= invoice.total) {
       return 'paid';
     }
-    
-    // Check if overdue
-    const dueDate = new Date(invoice.dueDate);
-    const today = new Date();
-    if (dueDate < today) {
-      return 'overdue';
-    }
-    
+        
     return 'pending';
   };
 
@@ -461,7 +452,6 @@ export const InvoiceHistoryList: React.FC<InvoiceHistoryListProps> = ({
           <option value="all">All Status</option>
           <option value="paid">Paid Complete</option>
           <option value="pending">Pending</option>
-          <option value="overdue">Overdue</option>
         </FilterSelect>
       </SearchFilterBar>
 
@@ -482,8 +472,8 @@ export const InvoiceHistoryList: React.FC<InvoiceHistoryListProps> = ({
                 <TableHeaderCell>Invoice #</TableHeaderCell>
                 <TableHeaderCell>Client</TableHeaderCell>
                 <TableHeaderCell>Date</TableHeaderCell>
-                <TableHeaderCell>Due Date</TableHeaderCell>
-                <TableHeaderCell style={{ textAlign: 'right' }}>Amount</TableHeaderCell>
+                {/* <TableHeaderCell>Due Date</TableHeaderCell> */}
+                <TableHeaderCell style={{ textAlign: 'right' }}>Balance</TableHeaderCell>
                 <TableHeaderCell>Status</TableHeaderCell>
                 <TableHeaderCell style={{ textAlign: 'center' }}>Actions</TableHeaderCell>
               </tr>
@@ -494,7 +484,7 @@ export const InvoiceHistoryList: React.FC<InvoiceHistoryListProps> = ({
                   <InvoiceNumberCell>{invoice.invoiceNumber}</InvoiceNumberCell>
                   <ClientNameCell>{invoice.clientName || 'N/A'}</ClientNameCell>
                   <DateCell>{formatDate(invoice.invoiceDate)}</DateCell>
-                  <DateCell>{formatDate(invoice.dueDate)}</DateCell>
+                  {/* <DateCell>{formatDate(invoice.dueDate)}</DateCell> */}
                   <AmountCell>{formatCurrency(invoice.total)}</AmountCell>
                   <TableCell>
                     <StatusBadge status={getInvoiceStatus(invoice)}>

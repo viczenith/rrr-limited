@@ -296,7 +296,7 @@ export default function AboutPage() {
                           <div className="relative w-full h-full rounded-full overflow-hidden shadow-2xl border-4 border-amber-400">
                             {!imageError ? (
                               <img
-                                src="./rrr-ceo.jpeg"
+                                src={`${import.meta.env.BASE_URL}rrr-ceo.jpeg`}
                                 alt="CEO - Righteous & Rich Realty"
                                 className="w-full h-full object-cover object-center"
                                 onError={() => setImageError(true)}
@@ -372,7 +372,7 @@ export default function AboutPage() {
                             <div className="relative w-full h-full rounded-full overflow-hidden shadow-2xl border-4 border-amber-400">
                               {!imageError ? (
                                 <img
-                                  src="/rrr-ceo.jpeg"
+                                  src={`${import.meta.env.BASE_URL}rrr-ceo.jpeg`}
                                   alt="CEO - Righteous & Rich Realty"
                                   className="w-full h-full object-cover object-center"
                                   onError={() => setImageError(true)}
@@ -435,7 +435,7 @@ export default function AboutPage() {
                         <div className="flex items-center space-x-4">
                           <div className="w-16 h-16 rounded-full overflow-hidden border-2 border-amber-400">
                             {!imageError ? (
-                              <img src="/rrr-ceo.jpeg" alt="CEO" className="w-full h-full object-cover" onError={() => setImageError(true)} />
+                              <img src={`${import.meta.env.BASE_URL}rrr-ceo.jpeg`} alt="CEO" className="w-full h-full object-cover" onError={() => setImageError(true)} />
                             ) : (
                               <div className="w-full h-full bg-gradient-to-br from-amber-100 to-blue-100 flex items-center justify-center">
                                 <span className="text-amber-600 font-bold">CEO</span>
@@ -617,7 +617,7 @@ export default function AboutPage() {
                   <CardContent className="p-8 text-center">
                     <div className="mx-auto w-28 h-28 rounded-full overflow-hidden border-4 border-amber-400 shadow mb-4">
                       {!imageError ? (
-                        <img src="/rrr-ceo.jpeg" alt={member.name} className="w-full h-full object-cover" onError={() => setImageError(true)} />
+                        <img src={`${import.meta.env.BASE_URL}rrr-ceo.jpeg`} alt={member.name} className="w-full h-full object-cover" onError={() => setImageError(true)} />
                       ) : (
                         <div className="w-full h-full bg-gradient-to-br from-amber-100 to-blue-100 flex items-center justify-center">
                           <span className="text-amber-600 font-bold">CEO</span>

@@ -31,7 +31,7 @@ export default function Footer() {
             <div className="flex items-center space-x-4 group">
               <div className="w-16 h-16 bg-white rounded-2xl flex items-center justify-center border-2 border-gray-200 shadow-xl group-hover:shadow-2xl group-hover:scale-105 transition-all duration-300">
                 <img 
-                  src="/logo.png" 
+                  src={`${import.meta.env.BASE_URL}logo.png`} 
                   alt="RIGHTEOUS AND RICH REALTY Logo" 
                   className="w-12 h-12 rounded-xl object-cover group-hover:rotate-6 transition-transform duration-300"
                 />
