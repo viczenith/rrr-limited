@@ -1,4 +1,5 @@
 import { useState } from 'react'
+import { Link } from 'react-router-dom'
 import { Card, CardContent } from '@/components/ui/card'
 import { Button } from '@/components/ui/button'
 import { 
@@ -301,7 +302,7 @@ export default function AboutUs() {
 
 
           <div className="text-center px-4">
-            <a href="/about" className="inline-block">
+            <Link to="/about" className="inline-block">
               <Button 
                 size="lg" 
                 className="bg-gradient-to-r from-amber-500 via-amber-600 to-blue-600 hover:from-amber-600 hover:via-blue-500 hover:to-blue-700 text-white font-bold text-base sm:text-lg lg:text-xl px-8 sm:px-12 lg:px-20 py-6 sm:py-7 lg:py-8 rounded-full shadow-2xl hover:shadow-3xl transition-all duration-500 hover:scale-110 transform hover:-translate-y-2 relative overflow-hidden group"
@@ -316,7 +317,7 @@ export default function AboutUs() {
                 
                 <div className="absolute inset-0 rounded-full border-2 sm:border-4 border-white/30 animate-ping group-hover:animate-none"></div>
               </Button>
-            </a>
+            </Link>
           </div>
 
 

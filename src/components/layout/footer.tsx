@@ -2,6 +2,7 @@
 
 import { Button } from '@/components/ui/button'
 import { Input } from '@/components/ui/input'
+import { Link } from 'react-router-dom'
 import { 
   Phone, 
   Mail, 
@@ -66,10 +67,9 @@ export default function Footer() {
           <div className="space-y-6">
             <h3 className="text-xl font-bold text-white">Quick Links</h3>
             <ul className="space-y-3 text-base">
-              <li><a href="/estates" className="text-gray-300 hover:text-emerald-400 transition-colors duration-300 font-medium hover:translate-x-1 inline-block">→ Available Estates</a></li>
-              <li><a href="/affiliate-registration" className="text-gray-300 hover:text-emerald-400 transition-colors duration-300 font-medium hover:translate-x-1 inline-block">→ Affiliate Program</a></li>
-              <li><a href="/invoice-generator" className="text-gray-300 hover:text-emerald-400 transition-colors duration-300 font-medium hover:translate-x-1 inline-block">→ Invoice Generator</a></li>
-              <li><a href="/contact" className="text-gray-300 hover:text-emerald-400 transition-colors duration-300 font-medium hover:translate-x-1 inline-block">→ Contact Us</a></li>
+              <li><Link to="/estates" className="text-gray-300 hover:text-emerald-400 transition-colors duration-300 font-medium hover:translate-x-1 inline-block">→ Available Estates</Link></li>
+              <li><Link to="/affiliate-registration" className="text-gray-300 hover:text-emerald-400 transition-colors duration-300 font-medium hover:translate-x-1 inline-block">→ Affiliate Program</Link></li>
+              <li><Link to="/contact" className="text-gray-300 hover:text-emerald-400 transition-colors duration-300 font-medium hover:translate-x-1 inline-block">→ Contact Us</Link></li>
             </ul>
           </div>
 
@@ -131,9 +131,9 @@ export default function Footer() {
             </p>
             <p>Designed & Developed by <a href='https://www.fescode.com' className='text-emerald-400' target='blank'>FesCode Limited</a></p>
             <div className="flex space-x-8 mt-6 md:mt-0">
-              <a href="/privacy-policy" className="hover:text-emerald-400 transition-colors duration-300 font-medium hover:translate-y-[-2px] inline-block">Privacy Policy</a>
-              <a href="/terms-of-service" className="hover:text-emerald-400 transition-colors duration-300 font-medium hover:translate-y-[-2px] inline-block">Terms of Service</a>
-              <a href="/cookie-policy" className="hover:text-emerald-400 transition-colors duration-300 font-medium hover:translate-y-[-2px] inline-block">Cookie Policy</a>
+              <Link to="/legal" className="hover:text-emerald-400 transition-colors duration-300 font-medium hover:translate-y-[-2px] inline-block">Privacy Policy</Link>
+              <Link to="/legal" className="hover:text-emerald-400 transition-colors duration-300 font-medium hover:translate-y-[-2px] inline-block">Terms of Service</Link>
+              <Link to="/legal" className="hover:text-emerald-400 transition-colors duration-300 font-medium hover:translate-y-[-2px] inline-block">Cookie Policy</Link>
             </div>
           </div>
         </div>
