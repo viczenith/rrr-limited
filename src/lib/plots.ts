@@ -99,7 +99,7 @@ export const plotConfigs: Record<string, PlotConfig> = {
     rating: 4.6,
     description:
       '3 Bedroom Fully Detached Duplex. Affordable luxury living with complete infrastructure and serene environment.',
-    floorPlanImage: `${import.meta.env.BASE_URL}estate-prototypes/floor-400.webp`,
+    floorPlanImage: `${import.meta.env.BASE_URL}estate-prototypes/prototype1.webp`,
     floorPlans: [
       {
         title: 'Ground Floor',
@@ -161,7 +161,7 @@ export const plotConfigs: Record<string, PlotConfig> = {
     rating: 4.5,
     description:
       '3 Bedroom Fully Detached Duplex. Sustainable living plot with eco-friendly features and wellness focus.',
-    floorPlanImage: `${import.meta.env.BASE_URL}estate-prototypes/floor-550.webp`,
+    floorPlanImage: `${import.meta.env.BASE_URL}estate-prototypes/prototype3.webp`,
     floorPlans: [
   { title: 'Ground Floor', bedrooms: 1, bathrooms: 2, bq: 1, lounges: 1, image: `${import.meta.env.BASE_URL}floor-plan/ground-floor.webp` },
       { title: 'First Floor', bedrooms: 3, bathrooms: 3, lounges: 1, study: true, image: `${import.meta.env.BASE_URL}floor-plan/first-floor.webp` },
@@ -173,7 +173,7 @@ export const plotConfigs: Record<string, PlotConfig> = {
     rating: 4.9,
     description:
       '3 Bedroom Fully Detached Duplex. Eco-friendly plot with sustainable living features and modern amenities.',
-    floorPlanImage: `${import.meta.env.BASE_URL}estate-prototypes/floor-600.webp`,
+    floorPlanImage: `${import.meta.env.BASE_URL}estate-prototypes/prototype1.webp`,
     floorPlans: [
   { title: 'Ground Floor', bedrooms: 2, bathrooms: 2, bq: 1, lounges: 1, image: `${import.meta.env.BASE_URL}floor-plan/ground-floor.webp` },
       { title: 'First Floor', bedrooms: 3, bathrooms: 3, lounges: 1, image: `${import.meta.env.BASE_URL}floor-plan/first-floor.webp` },
@@ -185,7 +185,7 @@ export const plotConfigs: Record<string, PlotConfig> = {
     rating: 4.8,
     description:
       '3 Bedroom Fully Detached Duplex. Exclusive plot with premium recreational facilities and scenic potential.',
-    floorPlanImage: `${import.meta.env.BASE_URL}estate-prototypes/floor-650.webp`,
+    floorPlanImage: `${import.meta.env.BASE_URL}estate-prototypes/prototype2.webp`,
     floorPlans: [
   { title: 'Ground Floor', bedrooms: 2, bathrooms: 3, bq: 1, lounges: 2, image: `${import.meta.env.BASE_URL}floor-plan/ground-floor.webp` },
       { title: 'First Floor', bedrooms: 4, bathrooms: 3, lounges: 1, study: true, image: `${import.meta.env.BASE_URL}floor-plan/first-floor.webp` },
@@ -197,7 +197,7 @@ export const plotConfigs: Record<string, PlotConfig> = {
     rating: 4.7,
     description:
       '3 Bedroom Fully Detached Duplex. Luxury plot with world-class amenity potential and smart technology integration.',
-    floorPlanImage: `${import.meta.env.BASE_URL}estate-prototypes/floor-750.webp`,
+    floorPlanImage: `${import.meta.env.BASE_URL}estate-prototypes/prototype3.webp`,
     floorPlans: [
   { title: 'Ground Floor', bedrooms: 2, bathrooms: 3, bq: 1, lounges: 2, image: `${import.meta.env.BASE_URL}floor-plan/ground-floor.webp` },
       { title: 'First Floor', bedrooms: 4, bathrooms: 4, lounges: 1, study: true, image: `${import.meta.env.BASE_URL}floor-plan/first-floor.webp` },
