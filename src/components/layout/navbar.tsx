@@ -13,6 +13,10 @@ const Navbar = () => {
   const location = useLocation();
   const { scrollY } = useScroll();
 
+  // Force-hide Navbar entirely on the invoice generator route
+  // This is a hard guard to ensure the navbar never renders on that page in production (e.g., GitHub Pages)
+  const normalizedPath = location.pathname.replace(/\/+$/, "");
+
   const navItems = [
     { path: '/', label: 'Home', description: 'Welcome home' },
     { 
@@ -76,6 +80,10 @@ const Navbar = () => {
       x: 0
     }
   };
+
+  if (normalizedPath === '/invoice-generator' || normalizedPath.endsWith('/invoice-generator')) {
+    return null;
+  }
 
   return (
     <>

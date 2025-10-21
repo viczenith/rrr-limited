@@ -2,7 +2,7 @@
 
 import { Button } from '@/components/ui/button'
 import { Input } from '@/components/ui/input'
-import { Link } from 'react-router-dom'
+import { Link, useLocation } from 'react-router-dom'
 import { 
   Phone, 
   Mail, 
@@ -15,6 +15,11 @@ import {
 } from 'lucide-react'
 
 export default function Footer() {
+  // Force-hide footer on invoice generator route (robust against trailing slashes)
+  const { pathname } = useLocation()
+  const normalizedPath = pathname.replace(/\/+$/, '')
+  if (normalizedPath === '/invoice-generator' || normalizedPath.endsWith('/invoice-generator')) return null
+
   return (
     <footer className="relative overflow-hidden" style={{ background: 'var(--gradient-charcoal)' }}>
       {/* Background decoration */}
