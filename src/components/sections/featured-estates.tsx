@@ -46,32 +46,32 @@ const estateConfigs = {
 // Plot size configurations with unique properties
 const plotConfigs = {
   "400sqm": {
-    prototypeImage: "/estate-prototypes/prototype1.webp",
+    prototypeImage: `${import.meta.env.BASE_URL}estate-prototypes/prototype1.webp`,
     rating: 4.6,
     description: "3 Bedroom Fully Detached Duplex. Affordable luxury living with complete infrastructure and serene environment."
   },
   "500sqm": {
-    prototypeImage: "/estate-prototypes/prototype2.webp", 
+    prototypeImage: `${import.meta.env.BASE_URL}estate-prototypes/prototype2.webp`, 
     rating: 4.8,
     description: "3 Bedroom Fully Detached Duplex. Premium residential plot with modern infrastructure and strategic location."
   },
   "550sqm": {
-    prototypeImage: "/estate-prototypes/prototype3.webp",
+    prototypeImage: `${import.meta.env.BASE_URL}estate-prototypes/prototype3.webp`,
     rating: 4.5,
     description: "3 Bedroom Fully Detached Duplex. Sustainable living plot with eco-friendly features and wellness focus."
   },
   "600sqm": {
-    prototypeImage: "/estate-prototypes/prototype1.webp",
+    prototypeImage: `${import.meta.env.BASE_URL}estate-prototypes/prototype1.webp`,
     rating: 4.9,
     description: "3 Bedroom Fully Detached Duplex. Eco-friendly plot with sustainable living features and modern amenities."
   },
   "650sqm": {
-    prototypeImage: "/estate-prototypes/prototype2.webp",
+    prototypeImage: `${import.meta.env.BASE_URL}estate-prototypes/prototype2.webp`,
     rating: 4.8,
     description: "3 Bedroom Fully Detached Duplex. Exclusive plot with premium recreational facilities and scenic potential."
   },
   "750sqm": {
-    prototypeImage: "/estate-prototypes/prototype3.webp",
+    prototypeImage: `${import.meta.env.BASE_URL}estate-prototypes/prototype3.webp`,
     rating: 4.7,
     description: "3 Bedroom Fully Detached Duplex. Luxury plot with world-class amenity potential and smart technology integration."
   }
